@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<ul>
+  <li>{{ title }}</li>
+  <li>
+    {% if description %}
+      {{ description }}
+    {% else %}
+       Coming soon
+    {% endif %}
+  </li>
+</ul>
+{% endblock %}
