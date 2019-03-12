@@ -2,13 +2,16 @@
 
 {% block content %}
 <ul>
-  <li>In APP{{ title }}</li>
+  <li>In APP - {{ obj.title }}</li>
   <li>
-    {% if description %}
-      {{ description }}
+    {% if obj.description %}
+      {{ obj.description }}
     {% else %}
        Coming soon
     {% endif %}
+  </li>
+  <li>
+    {{ obj.price }}
   </li>
 </ul>
 {% endblock %}
