@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<ul>
+  <li>Article - {{ object.title }}</li>
+  <li>
+    {% if object.content %}
+      {{ object.content }}
+    {% else %}
+       Coming soon
+    {% endif %}
+  </li>
+  <li>
+    Active: {{ object.active }}
+  </li>
+</ul>
+{% endblock %}

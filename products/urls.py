@@ -8,5 +8,5 @@ urlpatterns = [
   path('create/', product_create_view),
   path('<int:my_id>/', dynamic_lookup_view, name = 'detail_product'),
   path('<int:my_id>/delete', product_delete_view, name = 'delete_product'),
-  path('', product_list_view, name = 'products')
+  path('', product_list_view, name = 'products')  
 ]
